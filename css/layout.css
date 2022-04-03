@@ -1,0 +1,62 @@
+.head-container{
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: #191d24;
+    display:flex;
+    justify-content:space-around;
+    
+}
+
+a{
+    text-decoration-line: none;
+}
+
+.text{
+    font-size: 10px;
+}
+
+.company{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 40px;
+    width: 200px;
+}
+
+.company :nth-child(1){
+    font-size: 13px;
+    font-weight:900;
+    padding-right:1%;
+}
+
+.company .text{
+    color:#9b9ba1;
+}
+
+.head-nav{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    margin:10px;
+    width: 200px;
+}
+
+.head-nav .item{
+    width: 50%;
+}
+
+.head-nav > li{
+    display: inline-block;
+}
+
+.item .text{
+    color:#9b9ba1;
+}
+
+.combobox{
+    background-color:#191d24;
+    border: 0;
+    color:#9b9ba1;
+    font-size:10px;
+}
