@@ -11,29 +11,74 @@
 </head>
 
 <body>
-    <div id="header">
-        <header>
-            <div class="head-container">
+    <div class="wrap">
+        <header class="header">
+            <nav class="head-container">
                 <a class="company" href="#">
                     <span class="text">OEVSISTERS</span>
                     <span class="text">games</span>
                 </a>
-                <nav>
-                    <ul class="head-nav">
-                        <li class="item"><a href="#" class="text">고객센터</a></li>
-                        <li class="item">
-                            <form>
-                                <select class="combobox" id="language">
-                                    <option class="text" value="ko">한국어</option>
-                                    <option class="text" value="en">English</option>
-                                    <option class="text" value="ja">日本語</option>
-                                </select>
-                            </form>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+                <ul class="head-nav">
+                    <li><a href="#" class="text">고객센터</a></li>
+                    <li>
+                        <form>
+                            <select class="combobox text" id="language">
+                                <option value="ko" selected>한국어</option>
+                                <option value="en">English</option>
+                                <option value="ja">日本語</option>
+                            </select>
+                            <button class="lang-btn" type="button">🔻</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
         </header>
+        <div class="content-container">
+            <section>
+                <article class="sec-container">
+                    <nav class="head1-container">
+                        <ul class="head1-nav">
+                            <li>
+                                <img
+                                    src="https://www.cookierun-kingdom.com/static/d8473823fd5fc1ca674920f26f54993f/e7014/flat-logo-ko.webp">
+                            </li>
+                            <li><a href="#">게임소개</a></li>
+                            <li><a href="#">캐릭터</a></li>
+                            <li><a href="#">세계관</a></li>
+                            <li><a href="#">미디어</a></li>
+                            <li><a href="#">쿠폰입력</a></li>
+                        </ul>
+                    </nav>
+                    <div class="sec-wrap">
+                        <div class="seclogo"><img
+                                src="https://www.cookierun-kingdom.com/static/decf6a8e88828281281f56b219dc0940/991d2/logo-ko.webp">
+                        </div>
+                        <div>
+                            <button class="secplaybtn" type="button" onclick="location.href='#'">
+                                <div class="playbtn">
+                                    <div class="play"></div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="store">
+                            <div class="secstore">App Store</div>
+                            <div class="secstore">Google Play</div>
+                            <div class="secstore">One Store</div>
+                            <div class="secstore">Galaxy Store</div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div>App Store</div>
+                    <div>Google Play</div>
+                    <div>One Store</div>
+                    <div>Galaxy Store</div>
+                </article>
+            </section>
+        </div>
+        <footer>
+
+        </footer>
     </div>
 </body>
 
