@@ -14,24 +14,29 @@
     <div class="wrap">
         <header class="header">
             <nav class="head-container">
-                <a class="company" href="#">
-                    <span class="text">OEVSISTERS</span>
-                    <span class="text">games</span>
-                </a>
-                <ul class="head-nav">
-                    <li><a href="#" class="text">고객센터</a></li>
-                    <li>
-                        <form>
-                            <select class="combobox text" id="language">
-                                <option value="ko" selected>한국어</option>
-                                <option value="en">English</option>
-                                <option value="ja">日本語</option>
-                            </select>
-                            <button class="lang-btn" type="button">🔻</button>
-                        </form>
-                    </li>
-                </ul>
+                <div class="head-wrap first">
+                    <a class="company" href="#">
+                        <span class="text">OEVSISTERS</span>
+                        <span class="text">games</span>
+                    </a>
+                </div>
+                <div class="head-wrap second">
+                    <ul class="head-nav">
+                        <li><a href="#" class="text">고객센터</a></li>
+                        <li>
+                            <form>
+                                <select class="combobox text" id="language">
+                                    <option value="ko" selected>한국어</option>
+                                    <option value="en">English</option>
+                                    <option value="ja">日本語</option>
+                                </select>
+                                <button class="lang-btn" type="button">🔻</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
             </nav>
+            <div class="cafe"><a href="#">공식카페</a></div>
         </header>
         <div class="content-container">
             <section>
@@ -49,35 +54,46 @@
                             <li><a href="#">쿠폰입력</a></li>
                         </ul>
                     </nav>
-                    <div class="sec-wrap">
-                        <div class="seclogo"><img
-                                src="https://www.cookierun-kingdom.com/static/decf6a8e88828281281f56b219dc0940/991d2/logo-ko.webp">
-                        </div>
-                        <div>
-                            <button class="secplaybtn" type="button" onclick="location.href='#'">
-                                <div class="playbtn">
-                                    <div class="play"></div>
-                                </div>
-                            </button>
-                        </div>
-                        <div class="store">
-                            <div class="secstore">App Store</div>
-                            <div class="secstore">Google Play</div>
-                            <div class="secstore">One Store</div>
-                            <div class="secstore">Galaxy Store</div>
+                    <div class="sec-wrapper">
+                        <div class="sec-wrap">
+                            <div class="seclogo"><img
+                                    src="https://www.cookierun-kingdom.com/static/decf6a8e88828281281f56b219dc0940/991d2/logo-ko.webp">
+                            </div>
+                            <div>
+                                <button class="secplaybtn" type="button" onclick="location.href='#'">
+                                    <div class="playbtn">
+                                        <div class="play"></div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="store">
+                                <div class="secstore"><a href="#">App Store</a></div>
+                                <div class="secstore"><a href="#">Google Play</a></div>
+                                <div class="secstore"><a href="#">One Store</a></div>
+                                <div class="secstore"><a href="#">Galaxy Store</a></div>
+                            </div>
                         </div>
                     </div>
-                </article>
-                <article>
-                    <div>App Store</div>
-                    <div>Google Play</div>
-                    <div>One Store</div>
-                    <div>Galaxy Store</div>
+                    <div class="scroll-wrap">
+                        <div class="label">SCROLL</div>
+                        <button type="button" onclick="location.href='#footer'" class="scroll">
+                        </button>
+                    </div>
                 </article>
             </section>
         </div>
-        <footer>
-
+        <footer id="footer" class="footer-wrap">
+            <div class="footer-inpo">
+                <ul>
+                    <li class="footer-nav">이용약관</li>
+                    <li class="footer-nav">개인정보처리방침</li>
+                    <li class="footer-nav">고객센터</li>
+                </ul>
+            </div>
+            <div>서울특별시 어느구 어느대로 999</div>
+            <div>전화: 02-0000-1111 팩스: 02-1111-0000</div>
+            <div>© 2022 Oevsisters Corp. All Rights Reserved.</div>
+            <div>OEVSISTERS</div>
         </footer>
     </div>
 </body>
