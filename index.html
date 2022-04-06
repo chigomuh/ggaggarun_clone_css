@@ -36,22 +36,27 @@
                     </ul>
                 </div>
             </nav>
-            <div class="cafe"><a href="#">공식카페</a></div>
+            <div class="cafe"><a href="https://cafe.naver.com/crkingdom">공식카페</a></div>
         </header>
         <div class="content-container">
             <section>
                 <article class="sec-container">
                     <nav class="head1-container">
+                        <input class="head1-nav-toggle" id="head1-nav-toggle" type="checkbox">
+                        <label class="nav-icon" for="head1-nav-toggle">
+                            <span class="nav-icon-bar"></span>
+                        </label>
                         <ul class="head1-nav">
                             <li>
                                 <img
                                     src="https://www.cookierun-kingdom.com/static/d8473823fd5fc1ca674920f26f54993f/e7014/flat-logo-ko.webp">
                             </li>
-                            <li><a href="#">게임소개</a></li>
-                            <li><a href="#">캐릭터</a></li>
-                            <li><a href="#">세계관</a></li>
-                            <li><a href="#">미디어</a></li>
-                            <li><a href="#">쿠폰입력</a></li>
+                            <li><a href="#" onclick="alert('게임소개 준비 중');">게임소개</a></li>
+                            <li><a href="#" onclick="alert('캐릭터 준비 중');">캐릭터</a></li>
+                            <li><a href="#" onclick="alert('세계관 준비 중');">세계관</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCAOTbNctDD0Hg5MG0enQpMQ">미디어</a></li>
+                            <li><a href="https://game.devplay.com/coupon/ck/ko">쿠폰입력</a>
+                            </li>
                         </ul>
                     </nav>
                     <div class="sec-wrapper">
@@ -67,10 +72,18 @@
                                 </button>
                             </div>
                             <div class="store">
-                                <div class="secstore"><a href="#">App Store</a></div>
-                                <div class="secstore"><a href="#">Google Play</a></div>
-                                <div class="secstore"><a href="#">One Store</a></div>
-                                <div class="secstore"><a href="#">Galaxy Store</a></div>
+                                <div class="secstore"><a
+                                        href="https://apps.apple.com/kr/app/%EC%BF%A0%ED%82%A4%EB%9F%B0-%ED%82%B9%EB%8D%A4/id1509450845">App
+                                        Store</a></div>
+                                <div class="secstore"><a
+                                        href="https://play.google.com/store/apps/details?id=com.devsisters.ck&hl=ko&gl=US">Google
+                                        Play</a></div>
+                                <div class="secstore"><a
+                                        href="https://m.onestore.co.kr/mobilepoc/apps/appsDetail.omp?prodId=0000751155">One
+                                        Store</a></div>
+                                <div class="secstore"><a
+                                        href="https://galaxystore.samsung.com/detail/com.devsisters.ck">Galaxy Store</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -85,9 +98,15 @@
         <footer id="footer" class="footer-wrap">
             <div class="footer-inpo">
                 <ul>
-                    <li class="footer-nav">이용약관</li>
-                    <li class="footer-nav">개인정보처리방침</li>
-                    <li class="footer-nav">고객센터</li>
+                    <li class="footer-nav">
+                        <a href="https://policy.devsisters.com/ko/terms-of-service?date=2021-08-26">이용약관</a>
+                    </li>
+                    <li class="footer-nav">
+                        <a href="https://policy.devsisters.com/ko/privacy?date=2021-08-26">개인정보처리방침</a>
+                    </li>
+                    <li class="footer-nav">
+                        <a href="https://cs.devsisters.com/ko/cookierun-kingdom">고객센터</a>
+                    </li>
                 </ul>
             </div>
             <div>서울특별시 어느구 어느대로 999</div>
@@ -96,6 +115,7 @@
             <div>OEVSISTERS</div>
         </footer>
     </div>
+    <script src="js/prefixfree.min.js"></script>
 </body>
 
 </html>

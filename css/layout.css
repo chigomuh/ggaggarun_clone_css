@@ -128,6 +128,63 @@ a{
     padding: 10px 0px;
 }
 
+.nav-icon{
+    cursor:pointer;
+    height:60px;
+    padding:28px 15px;
+    position:absolute;
+    top:0;
+    right:0;
+    user-select:none;
+}
+
+.nav-icon-bar{
+    display:block;
+    width:25px;
+    height:3px;
+    background-color: #ffe325;
+    z-index: 20;
+    transition:background-color .2s ease-out;
+}
+
+.nav-icon-bar:before,
+.nav-icon-bar:after{
+    content:"";
+    background-color:#ffe325;
+    display: block;
+    width:25px;
+    height:3px;
+    position:absolute;
+    z-index: 20;
+    transition:all .2s ease-out;
+}
+
+.nav-icon-bar:before{
+    top:35px;
+}
+
+.nav-icon-bar:after{
+    top:20px;
+}
+
+.head1-nav-toggle:checked ~ .nav-icon > .nav-icon-bar{
+    background: transparent;
+}
+
+.head1-nav-toggle:checked ~ .nav-icon > .nav-icon-bar::before{
+    transform:rotate(45deg);
+    top:30px;
+}
+
+.head1-nav-toggle:checked ~ .nav-icon > .nav-icon-bar::after{
+    transform:rotate(-45deg);
+    top:30px;
+}
+
+.head1-nav-toggle, .nav-icon{
+    display:none;
+}
+
 .content-container,section{
     width:100%;
     height:100%;
@@ -323,6 +380,87 @@ button:hover{
     margin:10px;
 }
 
+.footer-nav > a{
+    color:#ffffff;
+}
+
 .head1-nav > li > a:hover{
     font-size:20px;
+}
+
+@media screen and (max-width: 1200px){
+    .head1-nav, .head-container{
+        display:none;
+    }
+
+    .nav-icon{
+        display: block;
+    }
+
+    .head1-nav-toggle:checked ~ .head1-nav{
+        display:block;
+        width:100%;
+        height:100vh;
+        position: absolute;
+        background-color: #000000;
+        opacity: 0.8;
+    }
+
+    .head1-nav-toggle:checked ~ .head1-nav > li{
+        display:block;
+        padding:10px;
+    }
+
+    .head1-nav-toggle:checked ~ .head1-nav > li > a{
+        font-size:20px;
+    }
+
+    .store{
+        z-index: 200;
+    }
+
+    .head1-nav-toggle:checked ~ .head1-nav > li > a:active{
+        font-size:25px;
+        animation: toggleActive 1s ease;
+    }
+
+    .secstore:active{
+        animation: secstoreActive 1s ease;
+    }
+
+    .secstore:hover{
+        transform: scale(1);
+    }
+
+    @keyframes secstoreActive{
+        from{
+            transform: scale(1.2);
+        }
+        to{
+            transform: scale(1);
+        }
+        
+    }
+
+    @keyframes toggleActive{
+        from{
+            font-size:25px;
+        }
+        to{
+            font-size:15px;
+        }
+    }
+
+    .footer-inpo > ul{
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer-nav{
+        display: block;
+        width:80%;
+    }
 }
