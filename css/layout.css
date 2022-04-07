@@ -197,6 +197,8 @@ a{
     z-index: 0;
     background-image: url("https://strapi-assets.devsisters.com/production/cutscene_ep10_02_c2976b9065.png");
     background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     text-align: center;
     position: relative;
 }
